@@ -1,0 +1,18 @@
+{
+  "projectName": "shopifyapp",
+  "version": "3.0",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "vue",
+    "config": {
+      "SourceDir": ".",
+      "DistributionDir": "dist",
+      "BuildCommand": "yarn generate",
+      "StartCommand": "yarn start",
+      "ServerlessContainers": false
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}

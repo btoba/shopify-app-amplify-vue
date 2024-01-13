@@ -1,0 +1,52 @@
+{
+    "paths": [
+        {
+            "name": "/shopify",
+            "lambdaFunction": "shopify",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/shopify"
+        },
+        {
+            "name": "/install",
+            "lambdaFunction": "shopify",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/install"
+        },
+        {
+            "name": "/uninstall",
+            "lambdaFunction": "shopify",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/uninstall"
+        }
+    ],
+    "resourceName": "shopifyappbackend",
+    "apiName": "shopifyappbackend",
+    "functionArns": [
+        {
+            "lambdaFunction": "shopify"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-shopifyapp-dev-220249-authRole",
+        "unAuthRoleName": "amplify-shopifyapp-dev-220249-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "shopify",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "a747e38f"
+}
